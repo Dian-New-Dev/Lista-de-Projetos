@@ -3,7 +3,7 @@
 }
 
 html {
-    background-image: url('div-back2.png');  
+    background-image: url('div-back2.png');
 }
 
 main > header {
@@ -29,7 +29,7 @@ main {
     min-height: 97.5vh;
     max-width: 1600px;
     gap: 10px;
-    grid-template-areas: 
+    grid-template-areas:
     'head head head'
     'sidebar list list'
     'sidebar list list'
@@ -43,18 +43,14 @@ main > header  {
     padding: 10px;
   }
 
+
+
   main > .sidebar {
     grid-area: sidebar;
     border: 5px double black;
     border-radius: 20px;
     padding: 10px;
-  }
-
-  main > .platform  {
-    grid-area: platform;
-    border: 5px double black;
-    border-radius: 20px;
-    padding: 10px;
+    width: 100%
   }
 
   main > .list  {
@@ -62,6 +58,7 @@ main > header  {
     border: 5px double black;
     border-radius: 20px;
     padding: 10px;
+    width: 700px;
   }
 
   main > footer {
@@ -74,22 +71,13 @@ main > header  {
     justify-content: center;
 }
 
-.list > .platform {
-    
-    
-}
-
-.list > .projects {
-    
-}
-
 .projects > .list-item {
     display: flex;
-    
+
 }
 
 .projects > .list-item div {
-    
+
     width: 20%;
     padding: 5px;
 }
@@ -104,7 +92,7 @@ main > header  {
     width: 20%;
     padding: 5px;
     font-size: 14px;
-    
+
 }
 
 .list-item > div {
@@ -121,14 +109,122 @@ main > header  {
 
 a {
     text-decoration: underline;
-    color: inherit; 
+    color: inherit;
   }
-  
+
 
   a:visited {
     color: inherit;
   }
-  
+
+
+/* JS interactivity starts here */
+
+#FEM-Projects {
+    display: none;
+}
+
+#JS30-Projects {
+    display: none;
+}
+
+
+/* media query starts here */
+
+@media (max-width: 800px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* margin-left: -190px; */
+        width: 100%;
+        
+    } 
+        
+  }
+@media (max-width: 800px) {
+    main > footer {
+        width: 100%;
+        
+    } 
+        
+  }
+
+  @media (max-width: 800px) {
+    main > header {
+        width: 100%;
+        
+    } 
+        
+  }
+
+  @media (max-width: 800px) {
+    main > .sidebar {
+        width: 100%;
+        
+    } 
+        
+  }
+
+
+  @media (max-width: 800px) {
+    main > .list {
+        width: 100%;
+        
+    } 
+        
+  }
+
+  @media (max-width: 600px) {
+    .description {
+        display: none;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .description-input {
+        display: none;
+    }
+  }
+
+  @media (min-width: 1070px) {
+    main > footer {
+        width: 100%;
+        
+    } 
+        
+  }
+
+  @media (min-width: 1070px) {
+    main > header {
+        width: 100%;
+        
+    } 
+        
+  }
+
+  @media (min-width: 1070px) {
+    main > .sidebar {
+        width: 300px;
+        
+    } 
+        
+  }
+
+
+  @media (min-width: 1070px) {
+    main > .list {
+        width: 100%;
+        
+    } 
+        
+  }
+
+  @media (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+  }
 
 
 /* this is the bare bones functional layout   \/ \/ \/
@@ -159,7 +255,7 @@ main {
     border: 1px solid black;
     min-height: 97.5vh;
     gap: 10px;
-    grid-template-areas: 
+    grid-template-areas:
     'head head head'
     'sidebar list list'
     'sidebar list list'
@@ -203,7 +299,7 @@ main > header  {
 
 .list > .platform {
     border: 1px solid red;
-    
+
 }
 
 .list > .projects {
@@ -231,7 +327,7 @@ main > header  {
     width: 20%;
     padding: 5px;
     font-size: 14px;
-    
+
 }
 
 .img {
