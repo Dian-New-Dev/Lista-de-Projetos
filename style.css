@@ -2,38 +2,78 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: 48px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+	height: 40px;
+	margin-top: 10px;
+	padding-left: 5px;
+}
+
+header p {
+	padding-left: 5px;
+}
+
+.sidebar h2,
+.sidebar p {
+    padding: 5px; 
+}
+
+
+h3 {
+    border-bottom: 2px solid black;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600; 
+}
+
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+	margin-bottom: -20px;
+}
+
+#footer {
+	font-size: 12px;
+}
+
 html {
     background-image: url('div-back2.png');
 }
 
 main > header {
-    background: rgba(43, 81, 102, 0.6);
+    background: rgba(160, 183, 196, 0.6);
 }
 
 main > section {
-    background: rgba(43, 81, 102, 0.6);
+    background: rgba(160, 183, 196, 0.6);
 }
 
 main > footer {
-    background: rgba(43, 81, 102, 0.6);
+    background: rgba(160, 183, 196, 0.6);
 }
 
 body {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     display: flex;
     justify-content: center;
+    position: relative;
+	margin: 0px;
 }
 
 main {
     display: grid;
-    min-height: 97.5vh;
+    min-height: 100vh;
     max-width: 1600px;
     gap: 10px;
+	padding-top: 10px;
     grid-template-areas:
     'head head head'
     'sidebar list list'
     'sidebar list list'
-    'footer footer footer'
+    'footer footer footer';
+	z-index: 99;
 }
 
 main > header  {
@@ -65,10 +105,11 @@ main > header  {
     grid-area: footer;
     border: 5px double black;
     border-radius: 20px;
-    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+	height: 30px;
+	
 }
 
 .projects > .list-item {
@@ -117,6 +158,62 @@ a {
     color: inherit;
   }
 
+#sideButtons {
+    position: fixed;
+    left: -80px;
+    top: 40%;
+	font-size: 12px;
+    display: flex;
+
+
+    background: rgba(160, 183, 196, 0.6);
+	border: 5px double black;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+	z-index: 100;
+
+}
+
+#sideButtons div {
+	border: 3px double white;
+}
+
+.wrapper1 {
+    background-color: black;
+    padding: 10px;
+	color: white;
+	border-radius: 10px;
+}
+
+.wrapper1 {
+    text-align: center;
+}
+
+.wrapper12 {
+    background-color: black;
+	color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+	border-radius: 10px;
+}
+
+.wrapper2,
+.wrapper3 {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 
 /* JS interactivity starts here */
 
@@ -131,7 +228,7 @@ a {
 
 /* media query starts here */
 
-@media (max-width: 800px) {
+@media (max-width: 910px) {
     main {
         display: flex;
         flex-direction: column;
@@ -142,7 +239,7 @@ a {
     } 
         
   }
-@media (max-width: 800px) {
+/* @media (max-width: 910px) {
     main > footer {
         width: 100%;
         
@@ -150,7 +247,7 @@ a {
         
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 910px) {
     main > header {
         width: 100%;
         
@@ -158,22 +255,24 @@ a {
         
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 910px) {
     main > .sidebar {
-        width: 100%;
+        width: 80px;
+        height: 100%;
         
     } 
         
   }
 
 
-  @media (max-width: 800px) {
+  @media (max-width: 910px) {
     main > .list {
         width: 100%;
+        height: 100%;
         
     } 
         
-  }
+  } */
 
   @media (max-width: 600px) {
     .description {
@@ -187,7 +286,24 @@ a {
     }
   }
 
-  @media (min-width: 1070px) {
+  /* @media (min-width: 600px) {
+    main > .sidebar {
+        width: 100%;
+        
+    } 
+        
+  }
+
+
+  @media (min-width: 600px) {
+    main > .list {
+        width: 100%;
+        
+    } 
+        
+  } */
+
+  @media (min-width: 910px) {
     main > footer {
         width: 100%;
         
@@ -195,15 +311,16 @@ a {
         
   }
 
-  @media (min-width: 1070px) {
+  @media (min-width: 910px) {
     main > header {
         width: 100%;
+        height: 100%;
         
     } 
         
   }
 
-  @media (min-width: 1070px) {
+  @media (min-width: 910px) {
     main > .sidebar {
         width: 300px;
         
@@ -212,8 +329,17 @@ a {
   }
 
 
-  @media (min-width: 1070px) {
+  @media (min-width: 910px) {
     main > .list {
+        width: 100%;
+        min-height: 700px;
+        
+    } 
+        
+  }
+
+  @media (min-width: 910px) {
+    main > footer {
         width: 100%;
         
     } 
@@ -225,6 +351,45 @@ a {
         font-size: 12px;
     }
   }
+
+
+
+
+
+
+  @media (max-width: 910px) {
+    main > footer {
+        width: 100%;
+        
+    } 
+        
+  }
+
+  @media (max-width: 910px) {
+    main > header {
+        width: 100%;
+        
+    } 
+        
+  }
+
+  @media (max-width: 910px) {
+    main > .sidebar {
+        width: 100%;
+        
+    } 
+        
+  }
+
+
+  @media (max-width: 910px) {
+    main > .list {
+        width: 100%;
+        
+    } 
+        
+  }
+
 
 
 /* this is the bare bones functional layout   \/ \/ \/
@@ -253,7 +418,7 @@ body {
 main {
     display: grid;
     border: 1px solid black;
-    min-height: 97.5vh;
+    max-height: 97.5vh;
     gap: 10px;
     grid-template-areas:
     'head head head'
