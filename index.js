@@ -43,6 +43,27 @@ panelToMove.addEventListener('click', function() {
     }
     
   });
+
+
+//modal \/ \/ \/
+
+const designButton = document.querySelector('.wrapper2');
+designButton.addEventListener('click', function () {
+    openDesignModal();
+})
+
+const modal = document.getElementById('designModal');
+const modalOverlay = document.getElementById('modalOverlay');
+function openDesignModal() {
+    modal.style.display ='block';
+    modalOverlay.style.display ='block';
+}
+
+function closeDesignModal() {
+    modal.style.display ='none';
+    modalOverlay.style.display ='none';
+    
+}
   
 
 

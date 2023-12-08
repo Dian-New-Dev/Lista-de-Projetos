@@ -160,12 +160,10 @@ a {
 
 #sideButtons {
     position: fixed;
-    left: -80px;
+    left: -77px;
     top: 40%;
 	font-size: 12px;
     display: flex;
-
-
     background: rgba(160, 183, 196, 0.6);
 	border: 5px double black;
     border-top-right-radius: 20px;
@@ -239,40 +237,6 @@ a {
     } 
         
   }
-/* @media (max-width: 910px) {
-    main > footer {
-        width: 100%;
-        
-    } 
-        
-  }
-
-  @media (max-width: 910px) {
-    main > header {
-        width: 100%;
-        
-    } 
-        
-  }
-
-  @media (max-width: 910px) {
-    main > .sidebar {
-        width: 80px;
-        height: 100%;
-        
-    } 
-        
-  }
-
-
-  @media (max-width: 910px) {
-    main > .list {
-        width: 100%;
-        height: 100%;
-        
-    } 
-        
-  } */
 
   @media (max-width: 600px) {
     .description {
@@ -286,22 +250,6 @@ a {
     }
   }
 
-  /* @media (min-width: 600px) {
-    main > .sidebar {
-        width: 100%;
-        
-    } 
-        
-  }
-
-
-  @media (min-width: 600px) {
-    main > .list {
-        width: 100%;
-        
-    } 
-        
-  } */
 
   @media (min-width: 910px) {
     main > footer {
@@ -390,119 +338,75 @@ a {
         
   }
 
-
-
-/* this is the bare bones functional layout   \/ \/ \/
-
-* {
-    box-sizing: border-box;
-
-}
-
-main > header {
-    background: lightblue;
-}
-
-main > section {
-    background: lightblue;
-}
-
-main > footer {
-    background: lightblue;
-}
-
-body {
-    font-family: 'Orbitron', sans-serif;
-}
-
-main {
-    display: grid;
-    border: 1px solid black;
-    max-height: 97.5vh;
-    gap: 10px;
-    grid-template-areas:
-    'head head head'
-    'sidebar list list'
-    'sidebar list list'
-    'footer footer footer'
-}
-
-main > header  {
-    grid-area: head ;
-    border: 1px solid red;
-    border-radius: 20px;
-    padding: 10px;
+  @media (max-width: 910px) {
+    #sideButtons {
+        position: fixed;
+		left: -77px;
+		top: 80%;
+		font-size: 10px;
+		border: none;
+		background: none;
+    }   
   }
 
-  main > .sidebar {
-    grid-area: sidebar;
-    border: 1px solid blue;
-    border-radius: 20px;
-    padding: 10px;
+  @media (max-width: 1677px) {
+    #sideButtons {
+        position: fixed;
+		left: -77px;
+		top: 80%;
+		font-size: 10px;
+		border: none;
+		background: none;
+    }     
   }
 
-  main > .platform  {
-    grid-area: platform;
-    border: 1px solid yellow;
-    border-radius: 20px;
-    padding: 10px;
-  }
 
-  main > .list  {
-    grid-area: list;
-    border: 1px solid green;
-    border-radius: 20px;
-    padding: 10px;
-  }
+  /* modals */
 
-  main > footer {
-    grid-area: footer;
-    border: 1px solid purple;
-    border-radius: 20px;
-    padding: 10px;
+#designModal {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	height: 250px;
+	width: 600px;
+	background-color: black;
+	color: white;
+	transform: translate(-50%, -50%);
+
+	padding-left: 20px;
+	padding-right:20px ;
+
+	z-index: 1000;
+
+	border-radius: 20px;
+
+	border: 5px double white;
 }
 
-.list > .platform {
-    border: 1px solid red;
-
+#designModal {
+	text-align: center;
 }
 
-.list > .projects {
-    border: 1px solid orange;
-}
-
-.projects > .list-item {
-    display: flex;
-    border: 1px dotted blue;
-}
-
-.projects > .list-item div {
-    border: 1px dotted green;
-    width: 20%;
-    padding: 5px;
-}
-
-.projects > .list-inputs {
-    display: flex;
-    border: 1px dotted blue;
-}
-
-.projects > .list-inputs div {
-    border: 1px dotted green;
-    width: 20%;
-    padding: 5px;
-    font-size: 14px;
+#modalButtonDiv {
+	display: flex;
+	justify-content: center;
 
 }
 
-.img {
-    width: 100%;
+#modalButton {
+	width: 200px;
+	border-radius: 20px;
+	border: 5px double black;
 }
 
-*/
-
-
-
-
-
-
+#modalOverlay {
+	display: none;
+	background-color: rgba(0, 0, 0, 0.466);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	z-index: 999;
+}
