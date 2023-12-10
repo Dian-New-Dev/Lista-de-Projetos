@@ -216,11 +216,11 @@ a {
 /* JS interactivity starts here */
 
 #FEM-Projects {
-    display: none;
+    display: block;
 }
 
 #JS30-Projects {
-    display: none;
+    display: block;
 }
 
 
