@@ -1,21 +1,9 @@
-// Database
-    // Modalidade (FEM, projeto pessoal, etc)
-        // Projeto
-            // Nome
-            // Link do site
-            // Link do repositório
-            // Descrição
-            // Preview
-
-// 1 - create hardcoded layout (FEM projects)
-
-
-
-// 2 - create object
+// Object that stores projects data (follow layoyt)
+// for platform: FEM-Projects, JS30-Projects,  My-Projects, etc
 
 const projectsData = [
     {
-        platform: 'test1', // FEM-Projects | JS30-Projects
+        platform: 'FEM-Projects',
         projectName: 'test2',
         siteLink: 'test3',
         repoLink: 'test4',
@@ -24,22 +12,29 @@ const projectsData = [
         imgSrc: 'images/test.jpg',
 
     },
-        //next project here
+    {
+        platform: 'FEM-Projects',
+        projectName: 'test2AA',
+        siteLink: 'test3AA',
+        repoLink: 'test4AA',
+        description: 'test5AA',
+        technologies: 'test6AA',
+        imgSrc: 'images/screenshot -FAQ.png',
+    }
+
 ]
 
-// 3 - insert object data into layout
+// Function that inserts data into the DOM layout
 
 function insertObjectData (platf, projectN, liveL, repoL, desc, techsUsed, imgSrc ) {
     const platformPanel = document.getElementById(platf);
     const listInputsDiv = document.createElement('div');
     listInputsDiv.setAttribute('class', 'list-inputs')
     platformPanel.appendChild(listInputsDiv);
-
     const projectNameInput = document.createElement('div');
-    projectNameInput.setAttribute('class', projectN);
-    projectNameInput.innerHTML = 'prencher';
+    projectNameInput.setAttribute('class', 'project-name-input');
+    projectNameInput.innerHTML = projectN;
     listInputsDiv.appendChild(projectNameInput);
-
     const liveLinkInput = document.createElement('div');
     liveLinkInput.setAttribute('class', 'live-link-input');
     const liveLinkA = document.createElement('a');
@@ -48,7 +43,6 @@ function insertObjectData (platf, projectN, liveL, repoL, desc, techsUsed, imgSr
     liveLinkA.innerHTML = 'Github Pages'
     liveLinkInput.appendChild(liveLinkA);
     listInputsDiv.appendChild(liveLinkInput);
-
     const githubInput = document.createElement('div');
     githubInput.setAttribute('class', 'git-hub-input');
     const githubA = document.createElement('a');
@@ -57,7 +51,6 @@ function insertObjectData (platf, projectN, liveL, repoL, desc, techsUsed, imgSr
     githubA.innerHTML = 'Link'
     githubInput.appendChild(githubA);
     listInputsDiv.appendChild(githubInput);
-
     const descriptionInput = document.createElement('div');
     descriptionInput.setAttribute('class', 'description-input');
     listInputsDiv.appendChild(descriptionInput);
@@ -80,8 +73,6 @@ function insertObjectData (platf, projectN, liveL, repoL, desc, techsUsed, imgSr
     techs.appendChild(techsContent);
     descr.appendChild(techsContent);
     descriptionInput.appendChild(descr);
-
-
     const previewInput = document.createElement('div');
     previewInput.setAttribute('class', 'preview-input')
     listInputsDiv.appendChild(previewInput)
@@ -92,11 +83,23 @@ function insertObjectData (platf, projectN, liveL, repoL, desc, techsUsed, imgSr
     
 }
 
+// Iterate over object and insert data into DOM
+
+let array = []
+for (const project of projectsData) {
+    for (const key in project) {
+            array.push(project[key])
+            if (array.length === 7) {
+                insertObjectData(array[0], array[1], array[2], array[3], array[4], 
+                    array[5], array[6]);
+                array = [];
+                
+            } else {
+                console.log('sla')
+            }
+        }
+        
+    }
 
 
-
-
-// 4 - turn hardcoded layoyt into dinamically filled layout
-
-// 5 - create form that automatically inserts data into layout
 
