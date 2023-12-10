@@ -74,7 +74,23 @@ previewInput.appendChild(imgPreview);
 
 // 2 - create object
 
+const projectsData = [
+    {
+        platform: 'test1',
+        projectName: 'test2',
+        siteLink: 'test3',
+        repoLink: 'test4',
+        description: 'test5',
+        technologies: 'test6',
+        imgSrc: 'images/test.jpg',
+
+    },
+        //next project here
+]
+
 // 3 - insert object data into layout
+
+
 
 // 4 - turn hardcoded layoyt into dinamically filled layout
 
