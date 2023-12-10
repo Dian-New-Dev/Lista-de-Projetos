@@ -4,27 +4,27 @@
 const projectsData = [
     {
         platform: 'FEM-Projects',
-        projectName: 'test2',
-        siteLink: 'test3',
-        repoLink: 'test4',
-        description: 'test5',
-        technologies: 'test6',
-        imgSrc: 'images/test.jpg',
+        projectName: 'QR Code',
+        siteLink: 'https://dian-new-dev.github.io/FEM-Challenge-1-QR-Code/',
+        repoLink: 'https://github.com/Dian-New-Dev/FEM-Challenge-1-QR-Code',
+        description: 'Primeiro desafio do Frontend Mentor que realizei: centralização de um QR Code.',
+        technologies: 'HTML, CSS, Javascript, Git',
+        imgSrc: 'images/screenshot.png',
 
     },
     {
         platform: 'FEM-Projects',
-        projectName: 'test2AA',
-        siteLink: 'test3AA',
-        repoLink: 'test4AA',
-        description: 'test5AA',
-        technologies: 'test6AA',
+        projectName: 'Accordeon FAQ',
+        siteLink: 'https://dian-new-dev.github.io/FEM-Challenge-2-FAQ-Accordion/',
+        repoLink: 'https://github.com/Dian-New-Dev/FEM-Challenge-2-FAQ-Accordion',
+        description: 'Estabelecimento de uma página única com um menu FAQ estilo acordeão. Design responsivo, interativo e navegação por teclado.',
+        technologies: 'HTML, CSS, Javascript, Git.',
         imgSrc: 'images/screenshot -FAQ.png',
-    }
+    },
 
 ]
 
-// Function that inserts data into the DOM layout
+// Function that creates the layout and inserts data into the DOM
 
 function insertObjectData (platf, projectN, liveL, repoL, desc, techsUsed, imgSrc ) {
     const platformPanel = document.getElementById(platf);
@@ -83,7 +83,7 @@ function insertObjectData (platf, projectN, liveL, repoL, desc, techsUsed, imgSr
     
 }
 
-// Iterate over object and insert data into DOM
+// Iterate over object and convert data into arguments, then call function
 
 let array = []
 for (const project of projectsData) {
@@ -94,9 +94,7 @@ for (const project of projectsData) {
                     array[5], array[6]);
                 array = [];
                 
-            } else {
-                console.log('sla')
-            }
+            } 
         }
         
     }
