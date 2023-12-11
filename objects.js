@@ -21,6 +21,15 @@ const projectsData = [
         technologies: 'HTML, CSS, Javascript, Git.',
         imgSrc: 'images/screenshot -FAQ.png',
     },
+    {
+        platform: 'FEM-Projects',
+        projectName: 'Preview Component Card',
+        siteLink: 'https://dian-new-dev.github.io/FEM-Challenge-3-Preview-Component-Card/',
+        repoLink: 'https://github.com/Dian-New-Dev/FEM-Challenge-3-Preview-Component-Card',
+        description: 'Recriação de um card de visualização prévia de produto, responsivo e com botão interativo.',
+        technologies: 'HTML, CSS, Javascript, Git.',
+        imgSrc: 'images/screenshot-P3.jpg',
+    }
 
 ]
 
