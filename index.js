@@ -9,6 +9,8 @@ FemButton.addEventListener('click', function () {
     showcontent(FemContent);
 })
 
+//
+
 const JS30Button = document.getElementById('JS30-title');
 const JS30content = document.getElementById('JS30-Projects')
 
@@ -19,6 +21,21 @@ JS30Button.addEventListener('mouseover', function () {
 JS30Button.addEventListener('click', function () {
     showcontent(JS30content);
 })
+
+//
+
+const MEButton = document.getElementById('ME-title');
+const MEcontent = document.getElementById('ME-Projects')
+
+MEButton.addEventListener('mouseover', function () {
+    MEButton.style.cursor = 'pointer';
+})
+
+MEButton.addEventListener('click', function () {
+    showcontent(MEcontent);
+})
+
+//
 
 function showcontent(content) {
     const currentDisplay = window.getComputedStyle(content).display;

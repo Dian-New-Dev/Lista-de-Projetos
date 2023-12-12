@@ -29,6 +29,15 @@ const projectsData = [
         description: 'Recriação de um card de visualização prévia de produto, responsivo e com botão interativo.',
         technologies: 'HTML, CSS, Javascript, Git.',
         imgSrc: 'images/screenshot-P3.jpg',
+    },
+    {
+        platform: 'ME-Projects',
+        projectName: 'Landing Page de Bar Musical',
+        siteLink: 'https://dian-new-dev.github.io/Personal-Project-Music-Bar-Landing-Page/',
+        repoLink: 'https://github.com/Dian-New-Dev/Personal-Project-Music-Bar-Landing-Page',
+        description: 'Landing page responsiva, simulando um bar musical anunciando um show de rock e colocando ingressos à venda. Layout e design inspirados em template online (link disponível no repositório).',
+        technologies: 'HTML, CSS, Javascript, Git.',
+        imgSrc: 'images/P4.jpg',  
     }
 
 ]
