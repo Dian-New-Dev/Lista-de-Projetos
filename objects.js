@@ -38,6 +38,15 @@ const projectsData = [
         description: 'Landing page responsiva, simulando um bar musical anunciando um show de rock e colocando ingressos à venda. Layout e design inspirados em template online (link disponível no repositório).',
         technologies: 'HTML, CSS, Javascript, Git.',
         imgSrc: 'images/P4.jpg',  
+    },
+    {
+        platform: 'ME-Projects',
+        projectName: 'Página de Cadastro de Empresa Turística',
+        siteLink: 'https://dian-new-dev.github.io/P-gina-de-Cadastro-de-Empresa-Tur-stica/',
+        repoLink: 'https://github.com/Dian-New-Dev/P-gina-de-Cadastro-de-Empresa-Tur-stica',
+        description: 'Página de cadastro de empresa de turismo no Pantanal, com imagens em loop no background.',
+        technologies: 'HTML, CSS, Javascript, Git.',
+        imgSrc: 'images/P5.jpg',          
     }
 
 ]
