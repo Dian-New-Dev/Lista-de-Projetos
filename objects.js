@@ -47,6 +47,15 @@ const projectsData = [
         description: 'Página de cadastro de empresa de turismo no Pantanal, com imagens em loop no background.',
         technologies: 'HTML, CSS, Javascript, Git.',
         imgSrc: 'images/P5.jpg',          
+    },
+    {
+        platform: 'ME-Projects',
+        projectName: 'Réplica de LP de Inova Soluções Digitais',
+        siteLink: 'https://dian-new-dev.github.io/LP-Inova-Solu-es-Digitais/',
+        repoLink: 'https://github.com/Dian-New-Dev/LP-Inova-Solu-es-Digitais',
+        description: 'Página de contatos da empresa Inova Soluções Digitais, por mim replicada.',
+        technologies: 'HTML, CSS, Javascript, CSS Peeper, Git.',
+        imgSrc: 'images/P6.png',          
     }
 
 ]
